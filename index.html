@@ -6,45 +6,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Document</title>
+    <title>Bootstrap_HW_02</title>
 </head>
 <body>
-    <div id="header" class="d-flex justify-content-center border-bottom shadow-sm mb-5 p-3">
-        <a class="text-uppercase fs-6 fw-normal text-decoration-none text-secondary me-5" href="#">
-            Главная
-        </a>
-        <a class="text-uppercase fs-6 fw-normal text-decoration-none text-secondary me-5" href="#">
-            Товары
-        </a>
-        <a class="text-uppercase fs-6 fw-normal text-decoration-none text-secondary me-5" href="#">
-            Услуги
-        </a>
-        <a class="text-uppercase fs-6 fw-normal text-decoration-none text-secondary" href="#">
-            Контакты
-        </a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Приемущества</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Цены</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Поиск чая" aria-label="Поиск чая">
+                    <button class="btn btn-outline-primary" type="submit">
+                        Найти
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+    <h1 class="text-center m-5">Наши чайные коллекции</h1>
+        <div class="row mb-auto">
+            <div class="col-lg-4">
+                <div class="card mb-4" style="height: 24rem;">
+                    <img src="./images/lime_tea.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Детокс чай лайм</h5>
+                        <p class="card-text">
+                            Великолепный чай внесет в вашу жизнь яркие краски и вкус расслабления.
+                        </p>
+                        <a href="#" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card mb-4" style="height: 24rem;">
+                    <img src="./images/berry_tea.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ягодный чай</h5>
+                        <p class="card-text">
+                            Нотки ягод позволят вам расслабиться и насладиться великолепием этого чая.
+                        </p>
+                        <a href="#" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card mb-4" style="height: 24rem;">
+                    <img src="./images/flower_tea.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Цветочный чай</h5>
+                        <p class="card-text">
+                            Душистые цветы создают невероятный аромат и наполняют вас энергией.
+                        </p>
+                        <a href="#" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card" style="height: 24rem;">
+                    <img src="./images/cleaning_tea.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Очищающий чай</h5>
+                        <p class="card-text">
+                            Бесподобный чай для получения утреннего заряда бодрости
+                        </p>
+                        <a href="#" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card" style="height: 24rem;">
+                    <img src="./images/sour_tea.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Кислый чай</h5>
+                        <p class="card-text">
+                            Кислый чай для настоящих ценителей кислинки во время чаепития
+                        </p>
+                        <a href="#" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card" style="height: 24rem;">
+                    <img src="./images/lemon_mint.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Лимонная мята</h5>
+                        <p class="card-text">
+                            Смесь лимона с мятой сделает ваш день самым лучшим
+                        </p>
+                        <a href="#" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center m-5">Сделать заказ</h2>
+        <div class="col-lg-6  mx-auto">
+            <div class="form row">
+                <div class="mb-3 col-lg-4">
+                    <label for="exampleFormControlInput1" class="form-label">Имя</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="mb-3 col-lg-4">
+                    <label for="exampleFormControlInput1" class="form-label">Фамилия</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="mb-3 col-lg-4">
+                    <label for="exampleFormControlInput1" class="form-label">Телефон</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="mb-3 col-lg-6">
+                    <label for="exampleFormControlInput1" class="form-label">Страна</label>
+                    <select id="inputState" class="form-select">
+                    </select>
+                </div>
+                <div class="mb-3 col-lg-6">
+                    <label for="exampleFormControlInput1" class="form-label">Индекс</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="mb-3 col-lg-12">
+                    <label for="exampleFormControlInput1" class="form-label">Адрес</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="mb-3 col-lg-12">
+                <button class="btn btn-primary" type="submit">Отправить</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="container" class="container-md d-flex justify-content-center justify-content-md-center flex-wrap m-lg-4 m-lg-auto">
-        <img class="m-lg-4" src="./images/img1-1.png" alt="">
-        <img class="m-lg-4" src="./images/img1.png" alt="">
-        <img class="m-lg-4" src="./images/img2-1.png" alt="">
-        <img class="m-lg-4" src="./images/img2.png" alt="">
-        <img class="m-lg-4" src="./images/img3-1.png" alt="">
-        <img class="m-lg-4" src="./images/img3.png" alt="">
-        <img class="m-lg-4" src="./images/img4-1.png" alt="">
-        <img class="m-lg-4" src="./images/img4.png" alt="">
-        <img class="m-lg-4" src="./images/img5-1.png" alt="">
-        <img class="m-lg-4" src="./images/img5.png" alt="">
-        <img class="m-lg-4" src="./images/img6-1.png" alt="">
-        <img class="m-lg-4" src="./images/img6.png" alt="">
-    </div>
-    <div id="footer" class="d-flex justify-content-center border-top bg-light p-3 mt-5">
-        <span class="text-secondary fs-6 me-5">
-            Все права защищены
-        </span>
-        <span class="text-secondary fs-6">
-            2020
-        </span>
-    </div>
-
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <span class="navbar-text">
+                Все права защищены
+            </span>
+        </div>
+    </nav>
 </body>
 </html>
